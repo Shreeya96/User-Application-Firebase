@@ -192,6 +192,7 @@ public class MainActivity extends AppCompatActivity {
     public void onStart() {
         super.onStart();
 
+
 //        FirebaseUserActions.getInstance().start(getIndexApiAction());
         FirebaseUser user = mAuth.getCurrentUser();
         if (user != null) {
