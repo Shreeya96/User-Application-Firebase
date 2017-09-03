@@ -64,6 +64,7 @@ public class RegisterUser extends AppCompatActivity {
                 mDatabase.child("USERS").child(user.getUid()).setValue(dataMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
+
                         if (task.isSuccessful()) {
                             Log.v("RegisterUSer", "if task is successful");
                             Toast.makeText(RegisterUser.this, "Data Stored Successfully", Toast.LENGTH_LONG).show();
